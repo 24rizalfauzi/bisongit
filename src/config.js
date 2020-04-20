@@ -1,14 +1,14 @@
 'use strict'
 //GIT
-var dirbisongit					= 'E:\\EP\\BISONDOCS\\github\\dev\\bisongit' // tempat folder middleware di server
-var dirbisonmiddleware			= 'E:\\EP\\BISONDOCS\\github\\prod\\bison_middleware' // tempat folder middleware di server
-var dirbisonscheduler			= 'E:\\EP\\BISONDOCS\\github\\prod\\bison_scheduler' // tempat folder scheduler di server
-var dirbisonweb					= 'E:\\xampp\\htdocs\\bisonweb' // tempat folder bisonweb di server
-var gitpullbisonmiddleware		= 'git pull https://24rizalfauzi:*****r1zalf4Uzi*****@github.com/24rizalfauzi/bisonmiddleware.git' //buat pull otomatis
-var gitpullbisonweb				= 'git pull https://24rizalfauzi:*****r1zalf4Uzi*****@github.com/24rizalfauzi/bisonweb.git' //buat pull otomatis
-var gitpullbisonscheduler		= 'git pull https://24rizalfauzi:*****r1zalf4Uzi*****@github.com/24rizalfauzi/bisonscheduler.git' //buat pull otomatis
-var updatecodewhenrunbisongit	= true  //buat update code bisonscheduler,bisonweb,bisonmiddleware ketika running bisongit, false jika tidak
-var autoupdatecode				= false //buat auto update code bisonscheduler,bisonweb,bisonmiddleware otomatis, true jika autoupdate, false jika tidak
+var dirbisongit					= 'E:\\EP\\BISONDOCS\\github\\dev\\bisongit' // direktori middleware di server
+var dirbisonmiddleware			= 'E:\\EP\\BISONDOCS\\github\\prod\\bison_middleware' // direktori middleware di server
+var dirbisonscheduler			= 'E:\\EP\\BISONDOCS\\github\\prod\\bison_scheduler' // direktori scheduler di server
+var dirbisonweb					= 'E:\\xampp\\htdocs\\bisonweb' // direktori bisonweb di server
+var gitpullbisonmiddleware		= 'git pull https://24rizalfauzi:*****r1zalf4Uzi*****@github.com/24rizalfauzi/bisonmiddleware.git' //buat pull
+var gitpullbisonweb				= 'git pull https://24rizalfauzi:*****r1zalf4Uzi*****@github.com/24rizalfauzi/bisonweb.git' //buat pull
+var gitpullbisonscheduler		= 'git pull https://24rizalfauzi:*****r1zalf4Uzi*****@github.com/24rizalfauzi/bisonscheduler.git' //buat pull
+var updatecodewhenrunbisongit	= true  //buat update code(pull) bisonscheduler,bisonweb,bisonmiddleware ketika running bisongit, false jika tidak
+var autoupdatecode				= false //buat auto update code(pull) bisonscheduler,bisonweb,bisonmiddleware otomatis, true jika autoupdate, false jika tidak
 var autoupdatetime				= '0 45 1 * * *' //waktu auto update code
 									/*
 										Seconds: 0-59
