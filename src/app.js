@@ -5,21 +5,25 @@ global.config = require('./config.js')
 var sys = require('sys')
 var exec = require('child_process').exec;
 
-init()
+//updatecode when run
+if (config.updatecodewhenrunbisongit==true) {
+    init()
+    async function init(){
+        await pullscheduler()
+        await pullweb()
+        await pullmiddleware()
+    }
+}
 
-//pull code
-var CronJob = require('cron').CronJob;
-var job = new CronJob('0 45 1 * * *', async function() {
-    await pullscheduler()
-    await pullweb()
-    await pullmiddleware()
-}, null, true, 'Asia/Jakarta')
-job.start()
-
-async function init(){
-    await pullscheduler()
-    await pullweb()
-    await pullmiddleware()
+//autoupdatecode
+if (config.autoupdatecode==true) {
+    var CronJob = require('cron').CronJob;
+    var job = new CronJob(config.autoupdatetime, async function() {
+        await pullscheduler()
+        await pullweb()
+        await pullmiddleware()
+    }, null, true, 'Asia/Jakarta')
+    job.start()
 }
 
 async function pullscheduler(){
